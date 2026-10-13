@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="Yeti" content="noindex, nofollow">
+<title>노잉 메일 도구</title>
+<style>
+  body{margin:0;background:#f4f5f7;font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;color:#222}
+  .w{max-width:620px;margin:40px auto;padding:0 20px}
+  h1{font-size:24px;margin:0 0 6px}
+  .sub{color:#666;font-size:14px;margin:0 0 28px}
+  .card{background:#fff;border-radius:12px;padding:22px 24px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+  .card h2{font-size:15px;margin:0 0 10px}
+  .n{display:inline-block;width:22px;height:22px;border-radius:50%;background:#111;color:#fff;
+     font-size:12px;text-align:center;line-height:22px;margin-right:8px}
+  p,li{font-size:14px;line-height:1.8;margin:0}
+  ol{padding-left:20px;margin:6px 0 0}
+  .btn{display:flex;justify-content:space-between;align-items:center;background:#1f6f43;color:#fff;
+       text-decoration:none;padding:14px 18px;border-radius:8px;font-size:15px;font-weight:700;margin-top:10px}
+  .btn span{font-size:12px;font-weight:400;opacity:.85}
+  .warn{color:#b00020;font-weight:700}
+  code{background:#eee;padding:2px 6px;border-radius:4px;font-size:13px}
+  .note{color:#888;font-size:12px;margin-top:20px}
+</style></head><body><div class="w">
+<h1>노잉 메일 도구</h1>
+<p class="sub">네이버 메일에 [제안서 삽입] · [미디어킷 첨부] 버튼을 답니다.</p>
+
+<div class="card">
+  <h2><span class="n">1</span>Tampermonkey 설치 (처음 한 번)</h2>
+  <p>크롬 웹스토어에서 <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank">Tampermonkey</a> 를 추가합니다.</p>
+</div>
+
+<div class="card">
+  <h2><span class="n">2</span>크롬 설정 (처음 한 번)</h2>
+  <p>주소창에 <code>chrome://extensions</code> 를 입력하고</p>
+  <ol>
+    <li>오른쪽 위 <b>개발자 모드</b> 켜기</li>
+    <li>Tampermonkey <b>세부정보</b> 에서 <b>사용자 스크립트 허용</b> 켜기<br>
+        <span class="warn">이걸 안 켜면 버튼이 아예 보이지 않습니다.</span></li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2><span class="n">3</span>버튼 설치</h2>
+  <p>아래를 눌러 나오는 화면에서 <b>설치</b> 를 누르세요.</p>
+<a class="btn" href="noing.user.js">제안서 삽입 설치<span>v6.20</span></a>
+<a class="btn" href="noing_attach.user.js">미디어킷 첨부 설치<span>v1.16</span></a>
+
+</div>
+
+<div class="card">
+  <h2><span class="n">4</span>쓰는 법</h2>
+  <p>네이버 메일에서 <b>답장</b> 또는 <b>편지쓰기</b> 를 열면 왼쪽 아래와 본문 위에 버튼이 나타납니다.<br>
+  이후 새 버전은 크롬이 하루 안에 알아서 받아 옵니다. 다시 설치할 필요가 없습니다.</p>
+</div>
+<p class="note">이 페이지는 검색에 나오지 않도록 설정되어 있습니다. 주소를 팀 밖으로 공유하지 마세요.</p>
+</div></body></html>
